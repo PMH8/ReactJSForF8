@@ -1,0 +1,7 @@
+Nếu document.creatElement => trả về DOM creatElement
+
+React.creatElement=> Trả về React element(thành phần nhỏ nhất của React)
+
+React.creatElement có 3 đối sô: type, {title,className,....},childrent1,children2,....
+
+Các childrent cũng là các prop

@@ -1,0 +1,8 @@
+Jsx là Javascript XML. gồm thẻ mở thẻ đóng. Html cx là một XML
+JSX gần giống như Html
+
+Ta dùng thư viện bambel để chuyển từ jsx sang js(react)
+
+Khi làm jsx mà muốn truyền js vào ta dúng dấu ngoặc nhọn
+style là một object nên là cần {{}}. ngoặc ngoài là để viết code js trong jsx
+    ngoặc trong là viêt object

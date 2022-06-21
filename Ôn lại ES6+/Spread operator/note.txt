@@ -1,0 +1,3 @@
+Spread là toán tử rải.
+
+Khi use Spread thì sẽ bỏ dấu ngoặc đằng trước đi(Cả ngoặc nhọn và ngoặc vuông)

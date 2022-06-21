@@ -1,0 +1,1 @@
+react dom là cầu nối giữa react và dom

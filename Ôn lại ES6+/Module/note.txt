@@ -1,0 +1,5 @@
+Dùng để bóc tách các phần trong JS
+Thể hiện qua 2 từ khóa import và export
+Để import module thì cả 2 file js đều phải có type=module
+1 Module chỉ export có 1 export default
+Khi mà import {} from.... thì ta hiểu các import không phải là export default

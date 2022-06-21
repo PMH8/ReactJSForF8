@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <script>
+        /*
+            1.Tạo
+                <h1  title ="Hello" class="heading" >Hello guys. this is h1 tags</h1> 
+        */
+        //    C1: Dom element
+        const h1DOM = document.createElement('h1');
+        h1DOM.title = "Hello"
+        h1DOM.className = "heading"
+        h1DOM.innerText = "Hello guys"
+        document.body.appendChild(h1DOM);
+        console.log(h1DOM);
+        //  C2:React
+        const h1React = React.createElement("h1", {
+            title: "Hello",
+            className: "heading"
+        },
+            'Hello guys');
+        console.log(h1React)
+
+        // ------------------------------------
+        /*
+            1.Tạo
+                <ul>
+                    <li>Javascript</li>
+                    <li>ReactJS</li>
+                </ul>
+        */
+        //    C1: Dom element
+        const ulDOM = document.createElement("ul");
+        const li1 = document.createElement("li");
+        li1.innerText = "JS";
+        const li2 = document.createElement("li");
+        li2.innerText = "ReactJs";
+        ulDOM.appendChild(li1);
+        ulDOM.appendChild(li2);
+        console.log(ulDOM)
+        document.body.appendChild(ulDOM)
+
+        //  C2:React
+        const ulReact = React.createElement("ul",
+            {
+                className: "courses",
+                style:"color:red;font-size:30px"
+            },
+            React.createElement("li", { className: "js" }, "JS"),
+            React.createElement("li", {}, "React")
+        )
+
+        console.log(ulReact)
+
+
+    </script>
+</body>
+<script src="app.js"></script>
+
+</html>
