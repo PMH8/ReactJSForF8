@@ -1,0 +1,3 @@
+Component phải viết hoa ký tự đầu tiên
+Mọi function đều có thể là component cho dù nó có là 
+một function của một object

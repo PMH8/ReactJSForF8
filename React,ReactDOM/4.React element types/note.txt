@@ -1,0 +1,1 @@
+Quy ước tạo Componet là phải viết hoa chữ cái đầu lên.

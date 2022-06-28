@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // Có 2 cách truyền prop
+        // <YourComponent>
+        // propName1="String"
+        // propName2={exprestion}
+        // </YourComponent>
+
+
+        // Props default to true
+        // Nếu mà không truyền gì vào props thì nó sẽ mặc định là true
+        function Button({   colorPrimary,children }) {
+            return <button>{children}</button>
+        }
+        //  Toán tử giải
+        function Input({ label, ...inputProps }) {
+            return (
+                <div>
+                    <label>{label}</label>
+                    <input {...inputProps} />
+                </div>
+            )
+        }
+
+        function List({data}){
+            console.log(data);
+            return(
+                <ul>
+                {
+                    data.map((item,index)=>(
+                        // <p>Hello</p>
+                        <li key={index}>{item}</li>
+                    ))
+                }
+            </ul>
+            )
+        }
+        function App() {
+            const title = "This is button"
+            const cars=["BMV","Honda","Mer"]
+            return (
+                <div id="wrapper">
+
+                    <Button colorPrimary title="Click me" />
+                    <Button>Click me</Button>
+                    <Input
+                        lable="Full Name"
+                        placeholder="Enter name.."
+                        onFocus={()=>{
+                            console.log(Math.random())
+                        }}
+                        >
+                    </Input>
+                    <List data={cars}/>
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, document.getElementById("root"));
+
+    </script>
+</body>
+<script src="app.js"></script>
+
+</html>

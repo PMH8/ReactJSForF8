@@ -1,0 +1,15 @@
+*React Element
+    Các thẻ jsx giống html thì gọi là react element
+    Sử dụng props như là attr của html.  2 ATTR cần lưu ý:
+        -class      =>      className
+        -for        =>          htmlFor
+    Không thể tạo props mới cho React Element
+
+
+
+*React Component
+    Các function
+    Props được sử dụng như đối số của function. Có thể đặt tên tự do cho props
+    Tên Props đặt theo camelCased
+    Có Props key là một Props đặc biệt
+    Props là đối số của function nên có thể truyển bất kì dữ liệu gì

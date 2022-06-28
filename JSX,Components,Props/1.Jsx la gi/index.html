@@ -36,15 +36,23 @@
             {
                 name: "Java",
             }
-        ]
-    //    const jsx ={
-    //     <ul>
-    //         {courses.map(course=>{
-    //             <li>{course.name}</li>
-    //         })}
-    //     </ul>
-    //    }
-
+        ];
+        const jsx = (
+            <React.Fragment>
+            <ul>
+                {
+                    courses.map(course => 
+                        <li>{course.name}</li>
+                    )
+                }
+            </ul>
+            <h1>Hello word</h1>
+            </React.Fragment>
+                );
+        const root = document.getElementById("root");
+        ReactDOM.render(jsx, root)
+        console.log(jsx);
+        
 
 
 
