@@ -1,0 +1,5 @@
+    NodeJs là Javascript runtime.Node js chạy độc lập Javascript
+mà không cần trình duyệt chạy.Dùng chorme ,, để chạy
+    NodeJS dùng như máy chủ web để chạy
+    NodeJs có npm để quản lý thư viện cho React Js
+    

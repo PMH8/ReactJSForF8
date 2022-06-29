@@ -1,0 +1,3 @@
+    Module hóa các thành phần của front end:js ,css,image
+=>Đều có thể import,export các file
+    package.json là file mô tả dự án và quản lý các file cho dự án
