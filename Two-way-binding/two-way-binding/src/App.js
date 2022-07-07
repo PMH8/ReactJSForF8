@@ -1,5 +1,7 @@
 
 import { useState } from 'react';
+import RadioBox from './RadioBox';
+import CheckedBox from './CheckedBox';
 import './App.css';
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
 
   }
 
-  const [email,setEmail]=useState("")
+  const [email, setEmail] = useState("")
 
   return (
     <div className="App">
@@ -23,7 +25,14 @@ function App() {
       <button onClick={handleSetGift}>Click để nhận thưởng</button>
 
       {/* { Two way binding} */}
-      <input placeholder='Email' value={email} onChange={}/>
+      <input placeholder='Email' value={email} onChange={(e) => { setEmail(e.target.value) }} />
+      <div style={{ height: "50px" }}></div>
+      <RadioBox input={gifts}></RadioBox>
+      <div style={{ height: "50px" }}></div>
+
+      <div style={{ height: "50px" }}></div>
+      <CheckedBox input={gifts}></CheckedBox>
+      <div style={{ height: "50px" }}></div>
       <button>Register</button>
     </div>
 
