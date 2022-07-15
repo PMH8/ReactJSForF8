@@ -1,0 +1,14 @@
+-NPM là gì?
+    -Project scope:Cài vào dự án cụ thể
+        npm install react react-dom=> dependencies
+        npm i react react-dom=> dependencies
+
+        npm i --save-dev react react-dom=> devDependencies
+
+        npm uninstall react react-dom(xóa thư viện)
+
+    -Global scope:Cài vào biến global của máy tính
+        npm i --global create-react-app:Cài vào một thư mục user
+        Nhưng nó không lưu ở dự án mà luu vào mục user
+
+-NPX là gì?NODE==> npm,npx sẽ được cài
