@@ -1,0 +1,9 @@
+Giúp function component được sử dụng tốt hơn. không cần sử dụng class component
+Bản chất trong javascript nó là các hàm đc cung cấp sẵn,có tính năng cụ thể
+Khi sử dụng cần import : 
+Có các hook như :
+    +useState
+    +useEffect
+    +...
+console.log(React); để in ra các thuộc tính của react
+Hook có Lifecycle .Khi học phải chú ý đến life cycle

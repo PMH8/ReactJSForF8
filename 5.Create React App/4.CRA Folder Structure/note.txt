@@ -1,0 +1,9 @@
+    -public là file công khai:có thể truy cập được từ đường link
+        +manigest.json:Khai báo các thành phần trong web
+    -src chứa source code
+        +Index.js:Nó sẽ đọc và render ra.ReactDOM.render
+        +reportWebVitals.js:Để phân tích người trang web,thời gian truy cập,...=>Tối ưu trang web
+        +App.test:Test dự án
+
+    -gitigore:chứa các file khai báo để khi push lên git thì nó sẽ bỏ qua các file có tên trong file gitigore
+    
